@@ -20,6 +20,5 @@ bspc rule -a Screenkey manage=off
 bspc config focus_follows_pointer true
 
 $HOME/.config/polybar/launch.sh
-xrandr -s 1360x768
 xrdb .Xresources
 nitrogen --restore
