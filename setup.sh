@@ -13,7 +13,7 @@ cd /tmp/
 git clone https://aur.archlinux.org/picom-jonaburg-git
 cd /tmp/picom-jonaburg-git
 makepkg -si
-
+Ob
 cd $HOME
 
 mkdir $HOME/.config/picom
@@ -24,11 +24,11 @@ sudo pacman -Rs $(pacman -Qqdt)
 cd $HOME/dotfiles/fonts
 unzip Hack.zip
 rm Hack.zip
-mkdir $HOME/.local/share/fonts
+mkdir -p $HOME/.local/share/fonts
 mv $HOME/dotfiles/fonts/* $HOME/.local/share/fonts
 
 cd $HOME
 
-touch .xinitrc && echo -e "exec bspwm\nexec sxhkd" >> .xinitrc
+touch .xinitrc && echo "exec bspwm" >> .xinitrc
 
 echo -e "\nSetup completo"
