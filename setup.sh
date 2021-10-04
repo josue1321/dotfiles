@@ -16,9 +16,7 @@ makepkg -si
 Ob
 cd $HOME
 
-mkdir $HOME/.config/picom
-cp /etc/xdg/picom.conf.example $HOME/.config/picom/picom.conf
-mv $HOME/dotfiles/bspwm $HOME/.config/ && mv $HOME/dotfiles/sxhkd $HOME/.config/ && mv $HOME/dotfiles/polybar $HOME/.config/ && mv $HOME/dotfiles/urxvt/.Xresources $HOME
+mv $HOME/dotfiles/bspwm $HOME/.config/ && mv $HOME/dotfiles/sxhkd $HOME/.config/ && mv $HOME/dotfiles/polybar $HOME/.config/ && mv $HOME/dotfiles/urxvt/.Xresources $HOME && mv $HOME/dotfiles/picom $HOME/.config/
 sudo pacman -Rs $(pacman -Qqdt)
 
 cd $HOME/dotfiles/fonts
@@ -28,6 +26,8 @@ mkdir -p $HOME/.local/share/fonts
 mv $HOME/dotfiles/fonts/* $HOME/.local/share/fonts
 
 cd $HOME
+
+mv $HOME/dotfiles/wallpaper $HOME
 
 touch .xinitrc && echo "exec bspwm" >> .xinitrc
 

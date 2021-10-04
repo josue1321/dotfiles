@@ -5,7 +5,7 @@ sxhkd &
 $HOME/.config/polybar/launch.sh &
 xrdb .Xresources &
 nitrogen --restore &
-picom -b &
+picom -b --config ~/.config/picom/picom.conf  &
 ##################################
 
 bspc monitor -d I II III IV V VI VII VIII IX X
