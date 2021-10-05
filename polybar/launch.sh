@@ -7,8 +7,8 @@ killall -q polybar
 
 # Launch bar1 and bar2
 echo "---" | tee -a /tmp/polybar1.log /tmp/polybar2.log
-polybar workspace 2>&1 | tee -a /tmp/polybar1.log & disown
-polybar window_name 2>&1 | tee -a /tmp/polybar2.log & disown
-polybar modules 2>&1 | tee -a /tmp/polybar2.log & disown
+polybar -r workspace 2>&1 | tee -a /tmp/polybar1.log & disown
+polybar -r window_name 2>&1 | tee -a /tmp/polybar2.log & disown
+polybar -r modules 2>&1 | tee -a /tmp/polybar2.log & disown
 
 echo "Bars launched..."

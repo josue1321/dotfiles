@@ -5,7 +5,8 @@ sxhkd &
 $HOME/.config/polybar/launch.sh &
 xrdb .Xresources &
 nitrogen --restore &
-picom -b --config ~/.config/picom/picom.conf  &
+picom --config ~/.config/picom/picom.conf  &
+xsetroot -cursor_name left_ptr &
 ##################################
 
 bspc monitor -d I II III IV V VI VII VIII IX X

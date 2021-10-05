@@ -25,6 +25,13 @@ rm Hack.zip
 mkdir -p $HOME/.local/share/fonts
 mv $HOME/dotfiles/fonts/* $HOME/.local/share/fonts
 
+unzip FiraCode.zip
+rm FiraCode.zip
+mkdir -p $HOME/.local/share/fonts
+mv $HOME/dotfiles/fonts/Fira* $HOME/.local/share/fonts
+
+fc-cache -fv
+
 cd $HOME
 
 mv $HOME/dotfiles/wallpaper $HOME

@@ -2,46 +2,46 @@
 
 ! special
 URxvt.depth: 32
-*.foreground: #93a1a1
-*.background: [80]#141c21
-*.cursorColor: #afbfbf
+*.foreground: #d0d0d0
+!*.background: [80]#222222
+*.background: [80]#000000
+*.cursorColor: #d0d0d0
 
 ! black
-*.color0: #263640
-*.color8: #4a697d
+*.color0:  #151515
+*.color8:  #505050
 
 ! red
-*.color1: #d12f2c
-*.color9: #fa3935
+*.color1:  #a53c23
+*.color9:  #a53c23
 
 ! green
-*.color2: #819400
-*.color10: #a4bd00
+*.color2:  #7b9246
+*.color10: #7b9246
 
 ! yellow
-*.color3: #b08500
-*.color11: #d9a400
+*.color3:  #d3a04d
+*.color11: #d3a04d
 
 ! blue
-*.color4: #2587cc
-*.color12: #2ca2f5
+*.color4:  #6c99bb
+*.color12: #547c99
 
 ! magenta
-*.color5: #696ebf
-*.color13: #8086e8
+*.color5:  #9f4e85
+*.color13: #9f4e85
 
 ! cyan
-*.color6: #289c93
-*.color14: #33c5ba
+*.color6:  #7dd6cf
+*.color14: #7dd6cf
 
 ! white
-*.color7: #bfbaac
-*.color15: #fdf6e3
+*.color7:  #d0d0d0
+*.color15: #f5f5f5
 
 URxvt.scrollBar: false
 
-!URxvt.font: xft:Hack Nerd Font:pixelsize=14
-URxvt.font: xft:Hack Nerd Font Mono:pixelsize=13
+URxvt.font: xft:Hack Nerd Font Mono:pixelsize=14
 
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard
 URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
