@@ -7,6 +7,7 @@ xrdb .Xresources &
 nitrogen --restore &
 picom --config ~/.config/picom/picom.conf  &
 xsetroot -cursor_name left_ptr &
+dunst &
 ##################################
 
 bspc monitor -d I II III IV V VI VII VIII IX X

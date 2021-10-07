@@ -2,7 +2,7 @@
 
 echo -e "Iniciando Setup\n"
 
-sudo pacman -S bspwm sxhkd rofi nitrogen rxvt-unicode xorg xorg-xinit unzip
+sudo pacman -S bspwm sxhkd rofi nitrogen rxvt-unicode xorg xorg-xinit unzip gnu-free-fonts
 
 cd /tmp/
 git clone https://aur.archlinux.org/polybar
@@ -10,8 +10,8 @@ cd /tmp/polybar
 makepkg -si
 
 cd /tmp/
-git clone https://aur.archlinux.org/picom-jonaburg-git
-cd /tmp/picom-jonaburg-git
+git clone https://aur.archlinux.org/picom-ibhagwan-git
+cd /tmp/picom-ibhagwan-git
 makepkg -si
 Ob
 cd $HOME
