@@ -14,13 +14,20 @@ super + d
 super + Escape
 	pkill -USR1 -x sxhkd
 
+# flameshot
+Print
+	flameshot gui
+
+super + shift + q
+	 $HOME/.config/rofi/powermenu/powermenu.sh
+
 #
 # bspwm hotkeys
 #
 
 # quit/restart bspwm
-super + shift + {q,r}
-	bspc {quit,wm -r}
+super + shift + r
+	bspc wm -r
 
 # close and kill
 super + {_,shift + }w
